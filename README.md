@@ -1,14 +1,15 @@
-# EXP02--Design-Implementation-of-Full-Custom-2-1-MUX-using-Cadence-EDA-Tools
-Experiment -2 
+# Design-Implementation-of-2-Bit-Multiplier-using-Cadence-Tools
+Ex No: 06     Design & Implementation of 2 bit multiplier Using Cadence EDA Tools   
+
 Aim:
-To design and implement a 2:1 multiplexer (MUX) circuit using Cadence EDA tools, analyse its functionality and performance, and understand the principles of digital logic design, including schematic creation, layout design, and simulation.
+To design and implement a 2-bit multiplier circuit using Cadence EDA tools, simulate its functionality, and to understand its application in digital arithmetic operations.
+
 Tools Required:
 •	Personal Computer
 •	Cadence Virtuoso Software
 
-S C H E M A T I C S I M U L A T I O N
-PROCEDURE FOR CREATING THE SCHEMATIC SIMULATION
-Commands to get into Cadence
+S C H E M A T I C S I M U L A T I O N - PROCEDURE FOR CREATING THE SCHEMATIC SIMULATION -Commands to get into Cadence
+
 1.	Right Click and open the terminal window
 2.	Type the following commands as follows and press enter.
 •	csh
@@ -16,9 +17,9 @@ Commands to get into Cadence
 •	virtuoso 
 Procedure for Schematic simulation using Cadence
 
-1.	Now two windows must open i)virtuoso/command interpreter window ii)”Whats New…”
+1.	Now two windows must open i) virtuoso/command interpreter window ii)”Whats New…”
 2.	Close the 2nd window
-3.	Use 1st window i.e virtuoso window(CIW) for further processing.
+3.	Use 1st window i.e virtuoso window (CIW) for further processing.
 i.	Create a New Library
 ii.	Create Schematic Cell view.
 iii.	Create the Symbol for schematic Cell view.
@@ -28,29 +29,30 @@ v.	Analog simulation by spectre
 
 i)	Procedure for Creating New Library.
 •	File –New – Library
-•	Name : Give name for ur library Ex: VLSILAB_EXP_1
+•	Name: Give name for ur library Ex: VLSILAB_EXP_1
 •	Enable Attach to an existing technology library, Click OK
 •	Attach the library to the technology library gpdk045.Click OK
 ii)	Create Schematic Cell view.
-•	Go to 1st window i.e virtuoso(CIW)
+•	Go to 1st window i.e virtuoso (CIW)
 •	File-New-Cell view
 •	Setup the new file form
-	  Library: Select the one you a created.
-	  Cell : Give the experiment name Ex: Inverter View_Schematic
-	  Type: Schematic press OK
+	Library: Select the one you created.
+	Cell: Give the experiment name Ex: Inverter ViewSchematic
+	Type: Schematic press OK
 •	Add the required components from the libraries and make the connections.
 	Go to instance fixed menu or use shortcut key “I” from keypad to go instances
 	Click on browse. This opens the library browser
 	Now select the appropriate library for components like 
-	Gpdk45 ------------------------nmos1v,  pmos1v
+	Gpdk45 ------------------------nmos1v, pmos1v
 	Create Input and Output pins
 	Make the connections by using fixed narrow wire key
 	Click Check and Save button
-![image](https://github.com/user-attachments/assets/bd85c763-d697-4ab2-87f3-d677f24227ac)
 
+![IMG-20241019-WA0032](https://github.com/dharun06/Design-Implementation-of-2-Bit-Multiplier-using-Cadence-Tools/blob/main/6th%201.png)
 
  
 iii)	Creating the Symbol for schematic Cell view
+
 •	In the schematic window, execute 
 	Create – Cell view – From Cell view
 	The cell view from cell view window appears
@@ -63,10 +65,12 @@ iii)	Creating the Symbol for schematic Cell view
 •	Check for the position of pin side.Prss OK
 •	Edit for the shape by Create-Shape-Choose required options to edit.
 
- ![image](https://github.com/user-attachments/assets/ca09de2d-ba22-415f-a189-26893cdcc446)
+ ![IMG-20241019-WA0029](https://github.com/dharun06/Design-Implementation-of-2-Bit-Multiplier-using-Cadence-Tools/blob/main/6th%202.jpg)
+
 
 
 iv)	Creating the new test cell view
+
 •	Go to CIW window, Execute File-New-Cell view
 	Setup the new file form
 	Library: Select the one you created.
@@ -74,7 +78,11 @@ iv)	Creating the new test cell view
 	View: Schematic
 	Type: Schematic press OK
 •	Follow the step 3(ii) d to make the required connections
- ![image](https://github.com/user-attachments/assets/85b7456e-1902-4ac2-8291-6ae6035dd0a2)
+
+
+![IMG-20241019-WA0031](https://github.com/dharun06/Design-Implementation-of-2-Bit-Multiplier-using-Cadence-Tools/blob/main/6th%203.jpg)
+
+ 
 
 Analog simulation by SPECTRE.
 •	In test cell view window
@@ -86,17 +94,17 @@ Analog simulation by SPECTRE.
 	Execute Output s—to be plotted – Select on Schematic
 	Then Select the INPUT WIRE(Vin ) and OUTPUT WIRE(Vout) from your test Schematic using mouse
 •	Execute Simulation -- Net list and Run
- ![image](https://github.com/user-attachments/assets/92eae130-d124-4f8b-a4b5-0040f418f193)
+
+![IMG-20241026-WA0016](https://github.com/dharun06/Design-Implementation-of-2-Bit-Multiplier-using-Cadence-Tools/blob/main/6th%204.jpg)
+
 
 For Transient Analysis Settings and Output
- ![image](https://github.com/user-attachments/assets/47f7be45-4763-4d32-9eae-c417d1b7d501)
-
- ![image](https://github.com/dharun06/EXP02--Design-Implementation-of-Full-Custom-2-1-MUX-using-Cadence-EDA-Tools/blob/main/exp2vlsi.png)
+![IMG-20241019-WA0028](https://github.com/dharun06/Design-Implementation-of-2-Bit-Multiplier-using-Cadence-Tools/blob/main/6th%205.jpg)
 
 
+ ![IMG-20241019-WA0027](https://github.com/dharun06/Design-Implementation-of-2-Bit-Multiplier-using-Cadence-Tools/blob/main/output3%206th%20out.png)
 
- 
+  
 
 Results:
-1.	The experiment successfully demonstrated the design and implementation of a 2:1 MUX using Cadence EDA tools. 
-2.	The successful verification through schematic, layout, and simulation underscores the effectiveness of using Cadence EDA tools for digital circuit design.
+The design and implementation of the 2-bit multiplier using Cadence EDA tools were successfully carried out. The simulation results confirmed the correct operation of the multiplier for all input combinations. 
